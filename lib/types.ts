@@ -3,6 +3,7 @@ import { IconType } from 'react-icons'
 export interface CloudProvider {
 	name: string
 	ranges: string[]
+	rangesIPv6?: string[]
 	color: string
 	icon: IconType
 }

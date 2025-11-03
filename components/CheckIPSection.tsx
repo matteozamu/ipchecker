@@ -9,7 +9,7 @@ import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
 import { Badge } from '@/components/ui/badge'
 import { CheckCircle, XCircle, Info } from 'lucide-react'
 import { cloudProviders } from '@/lib/constants'
-import { checkIpInRange } from '@/lib/ip-utils'
+import { checkIpInProviderRanges } from '@/lib/ip-utils'
 import { ResultState } from '@/lib/types'
 
 export function CheckIPSection() {
@@ -53,7 +53,7 @@ export function CheckIPSection() {
 		const matchingProviders: string[] = []
 
 		Object.entries(cloudProviders).forEach(([key, provider]) => {
-			if (checkIpInRange(trimmedIp, provider.ranges)) {
+			if (checkIpInProviderRanges(trimmedIp, provider)) {
 				matchingProviders.push(provider.name)
 			}
 		})
