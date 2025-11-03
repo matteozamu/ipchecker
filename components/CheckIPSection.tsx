@@ -110,7 +110,7 @@ export function CheckIPSection() {
 											const providerEntry = Object.entries(cloudProviders).find(([_, p]) => p.name === providerName)
 											const color = providerEntry ? providerEntry[1].color : 'bg-gray-500'
 											return (
-												<Badge key={index} className={`${color} text-white border-0 px-2.5 py-0.5`}>
+												<Badge key={index} className={`${color} text-white border-0 px-2.5 py-0.5 hover:opacity-90`}>
 													{providerName}
 												</Badge>
 											)
