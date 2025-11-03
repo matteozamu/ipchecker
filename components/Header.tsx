@@ -11,9 +11,7 @@ export function Header() {
 						</div> */}
 						<img src='/logo.webp' alt='Logo' className='w-10 h-10' />
 						<div>
-							<h1 className='text-xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-500 bg-clip-text text-transparent'>
-								IP Range Checker
-							</h1>
+							<h1 className='text-xl font-bold'>IP Range Checker</h1>
 							<p className='text-xs text-muted-foreground'>Verify cloud provider IPs</p>
 						</div>
 					</div>
