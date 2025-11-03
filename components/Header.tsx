@@ -18,7 +18,7 @@ export function Header() {
 						</div>
 					</div>
 					<a
-						href='https://github.com'
+						href='https://github.com/matteozamu/ipchecker'
 						target='_blank'
 						rel='noopener noreferrer'
 						className='text-muted-foreground hover:text-foreground transition-colors'
